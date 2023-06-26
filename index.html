@@ -1,12 +1,2104 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>fleet git</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet"> 
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.3/css/swiper.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css" integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css" integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="/stylesheets/style.css">
+  <title>fleet</title>
+  </head>
 </head>
 <body>
-    hello world
+  <!-- header section  -->
+  <header>
+    <div class="logo">
+      <a href="#">
+        <img src="/assets/svg-images/logo.svg" alt="logo">
+        fleet
+      </a>
+    </div>
+    <div class="dropdown">
+      <a class="dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+        Travelers
+      </a>
+      <ul class="dropdown-menu">
+        <li><a class="dropdown-item" href="#">Action</a></li>
+        <li><a class="dropdown-item" href="#">Another action</a></li>
+        <li><a class="dropdown-item" href="#">Something else here</a></li>
+      </ul>
+    </div>
+    <ul class="menu-listing">
+      <li><a href="#">Support</a></li>
+      <li><a href="#" class="language">Language</a></li>
+      <li><a href="#" class="property-list">List your property</a></li>
+      <li><a href="#" class="subscribe-icon"><img src="/assets/svg-images/Vector.svg" alt="bell-icon"></a></li>
+      <li><a href="#" class="logged-in-person"><img src="/assets/png-images/logged-in-person.png" alt="logged-in-person"></a></li>
+    </ul>
+    <ul class="responsive-menu" role="list">
+      <li><a href="#" class="subscribe-icon"><img src="/assets/svg-images/Vector.svg" alt="bell-icon"></a></li>
+      <li><a href="#" class="logged-in-person"><img src="/assets/png-images/logged-in-person.png" alt="logged-in-person"></a></li>
+      <li><a href="" class="responsive-icon"><img src="/assets/svg-images/fleet-burger-menu.svg" alt=""></a></li>
+    </ul>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+  </header>
+  <main>
+    <!-- detail section  -->
+    <section class="detail">
+      <div class="detail-description">
+        <h1>Air, sleep, dream</h1>
+        <span>Find and book a great experience.</span>
+        <button class="search">Start your search</button>
+      </div>
+      <div class="detail-plans">
+        <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <div class="detail-listing">
+          <div class="tab-button-outer">
+            <ul role="list" id="tab-button">
+              <li><a href="#tab01">Stays</a></li>
+              <li><a href="#tab02">Flights</a></li>
+              <li><a href="#tab03">Cars</a></li>
+              <li><a href="#tab04">Things to do</a></li>
+            </ul>
+          </div>
+          <div class="tab-select-outer">
+            <select id="tab-select">
+              <option value="#tab01">Stays</option>
+              <option value="#tab02">Flights</option>
+              <option value="#tab03">Cars</option>
+              <option value="#tab04">Things to do</option>
+            </select>
+          </div>
+          <div id="tab01" class="tab-contents">
+            <div class="plan-details location">
+              <div class="image">
+                <img src="/assets/svg-images/location.svg" alt="location">
+              </div>
+              <div class="description">
+                <h4>Location</h4>
+                <span>Where are you going?</span>
+              </div>
+            </div>
+            <div class="plan-details">
+              <div class="image">
+                <img src="/assets/svg-images/check-in-out.svg" alt="check-in-out">
+              </div>
+              <div class="description">
+                <h4>Check in</h4>
+                <span>Add date</span>
+              </div>
+            </div>
+            <div class="plan-details">
+              <div class="image">
+                <img src="/assets/svg-images/check-in-out.svg" alt="check-in-out">
+              </div>
+              <div class="description">
+                <h4>Check out</h4>
+                <span>Add date</span>
+              </div>
+            </div>
+            <div class="plan-details">
+              <div class="image">
+                <img src="/assets/svg-images/check-in-out.svg" alt="check-in-out">
+              </div>
+              <div class="description">
+                <h4>Travelers</h4>
+                <span>Add guests</span>
+              </div>
+              <button class="search">
+                <img src="/assets/svg-images/search.svg" alt="search">
+              </button>
+            </div>
+          </div>
+          <div id="tab02" class="tab-contents">
+            <div class="plan-details">
+              <div class="image">
+                <img src="/assets/svg-images/check-in-out.svg" alt="check-in-out">
+              </div>
+              <div class="description">
+                <h4>Check in</h4>
+                <span>Add date</span>
+              </div>
+            </div>
+            <div class="plan-details location">
+              <div class="image">
+                <img src="/assets/svg-images/location.svg" alt="location">
+              </div>
+              <div class="description">
+                <h4>Location</h4>
+                <span>Where are you going?</span>
+              </div>
+            </div>
+            <div class="plan-details">
+              <div class="image">
+                <img src="/assets/svg-images/check-in-out.svg" alt="check-in-out">
+              </div>
+              <div class="description">
+                <h4>Travelers</h4>
+                <span>Add guests</span>
+              </div>
+              <button class="search">
+                <img src="/assets/svg-images/search.svg" alt="search">
+              </button>
+            </div>
+            <div class="plan-details">
+              <div class="image">
+                <img src="/assets/svg-images/check-in-out.svg" alt="check-in-out">
+              </div>
+              <div class="description">
+                <h4>Check out</h4>
+                <span>Add date</span>
+              </div>
+            </div>
+          </div>
+          <div id="tab03" class="tab-contents">
+            <div class="plan-details">
+              <div class="image">
+                <img src="/assets/svg-images/check-in-out.svg" alt="check-in-out">
+              </div>
+              <div class="description">
+                <h4>Check out</h4>
+                <span>Add date</span>
+              </div>
+            </div>
+            <div class="plan-details location">
+              <div class="image">
+                <img src="/assets/svg-images/location.svg" alt="location">
+              </div>
+              <div class="description">
+                <h4>Location</h4>
+                <span>Where are you going?</span>
+              </div>
+            </div>
+            <div class="plan-details">
+              <div class="image">
+                <img src="/assets/svg-images/check-in-out.svg" alt="check-in-out">
+              </div>
+              <div class="description">
+                <h4>Check in</h4>
+                <span>Add date</span>
+              </div>
+            </div>
+            <div class="plan-details">
+              <div class="image">
+                <img src="/assets/svg-images/check-in-out.svg" alt="check-in-out">
+              </div>
+              <div class="description">
+                <h4>Travelers</h4>
+                <span>Add guests</span>
+              </div>
+              <button class="search">
+                <img src="/assets/svg-images/search.svg" alt="search">
+              </button>
+            </div>
+          </div>
+          <div id="tab04" class="tab-contents">
+            <div class="plan-details">
+              <div class="image">
+                <img src="/assets/svg-images/check-in-out.svg" alt="check-in-out">
+              </div>
+              <div class="description">
+                <h4>Travelers</h4>
+                <span>Add guests</span>
+              </div>
+              <button class="search">
+                <img src="/assets/svg-images/search.svg" alt="search">
+              </button>
+            </div>
+            <div class="plan-details location">
+              <div class="image">
+                <img src="/assets/svg-images/location.svg" alt="location">
+              </div>
+              <div class="description">
+                <h4>Location</h4>
+                <span>Where are you going?</span>
+              </div>
+            </div>
+            <div class="plan-details">
+              <div class="image">
+                <img src="/assets/svg-images/check-in-out.svg" alt="check-in-out">
+              </div>
+              <div class="description">
+                <h4>Check in</h4>
+                <span>Add date</span>
+              </div>
+            </div>
+            <div class="plan-details">
+              <div class="image">
+                <img src="/assets/svg-images/check-in-out.svg" alt="check-in-out">
+              </div>
+              <div class="description">
+                <h4>Check out</h4>
+                <span>Add date</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- booking section  -->
+    <section class="booking">
+      <h3>Let’s go on an adventure</h3>
+      <span>Find and book a great experience.</span>
+      <div class="booking-listing">
+        <div class="card">
+          <div class="image">
+            <img src="/assets/png-images/travel-card-1.png" alt="travel">
+          </div>
+          <div class="description">
+            <span>Luxury resort at the sea</span>
+            <div class="places">9,326 places</div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="image">
+            <img src="/assets/png-images/travel-card-2.png" alt="travel">
+          </div>
+          <div class="description">
+            <span>Camping amidst the wild</span>
+            <div class="places">9,326 places</div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="image">
+            <img src="/assets/png-images/travel-card-3png" alt="">
+          </div>
+          <div class="description">
+            <span>Luxury resort at the sea</span>
+            <div class="places">9,326 places</div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="image">
+            <img src="/assets/png-images/travel-card-1.png" alt="travel">
+          </div>
+          <div class="description">
+            <span>Luxury resort at the sea</span>
+            <div class="places">9,326 places</div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="image">
+            <img src="/assets/png-images/travel-card-2.png" alt="travel">
+          </div>
+          <div class="description">
+            <span>Camping amidst the wild</span>
+            <div class="places">9,326 places</div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="image">
+            <img src="/assets/png-images/travel-card-3png" alt="">
+          </div>
+          <div class="description">
+            <span>Luxury resort at the sea</span>
+            <div class="places">9,326 places</div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="image">
+            <img src="/assets/png-images/travel-card-1.png" alt="travel">
+          </div>
+          <div class="description">
+            <span>Luxury resort at the sea</span>
+            <div class="places">9,326 places</div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="image">
+            <img src="/assets/png-images/travel-card-2.png" alt="travel">
+          </div>
+          <div class="description">
+            <span>Camping amidst the wild</span>
+            <div class="places">9,326 places</div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="image">
+            <img src="/assets/png-images/travel-card-3png" alt="">
+          </div>
+          <div class="description">
+            <span>Luxury resort at the sea</span>
+            <div class="places">9,326 places</div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- memories section -->
+    <section class="memories">
+      <h3>Travel to make memories all around the world</h3>
+      <span>Find trips that fit a flexible lifestyle</span>
+      <div class="facility-wrapper">
+        <div class="facility-content">
+          <div class="facilities">
+            <div class="points">01</div>
+            <h4>Find trips that fit a flexible lifestyle</h4>
+            <p>Stacks is a production-ready library of stackable content blocks built in React Native</p>
+          </div>
+          <div class="facilities">
+            <div class="points">02</div>
+            <h4>Travel with more confidence</h4>
+            <p>Stacks is a production-ready library of stackable content blocks built in React Native</p>
+          </div>
+          <div class="facilities">
+            <div class="points">03</div>
+            <h4>See what’s really included</h4>
+            <p>Stacks is a production-ready library of stackable content blocks built in React Native</p>
+          </div>
+          <button class="search">Start your search</button>
+        </div>
+        <div class="facility-listing">
+          <div class="card">
+            <img src="/assets/png-images/memories.png" alt="memories">
+            <div class="customer-rating">
+              <img src="/assets/png-images/memory-avatar.png" alt="memory-avatar">
+              <div class="person-detail">
+                <h5>Antone  Heller</h5>
+                <span>4.8</span>
+              </div>
+            </div>
+            <div class="customer-rating">
+              <img src="/assets/png-images/memory-avatar.png" alt="memory-avatar">
+              <div class="person-detail">
+                <h5>Antone  Heller</h5>
+                <span>4.8</span>
+              </div>
+            </div>
+            <div class="customer-rating">
+              <img src="/assets/png-images/memory-avatar.png" alt="memory-avatar">
+              <div class="person-detail">
+                <h5>Antone  Heller</h5>
+                <span>4.8</span>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <img src="/assets/png-images/adventure-card-2.png" alt="memories">
+            <div class="customer-rating">
+              <img src="/assets/png-images/host-4.png" alt="memory-avatar">
+              <div class="person-detail">
+                <h5>Zubair</h5>
+                <span>4.9</span>
+              </div>
+            </div>
+            <div class="customer-rating">
+              <img src="/assets/png-images/host-4.png" alt="memory-avatar">
+              <div class="person-detail">
+                <h5>Zubair</h5>
+                <span>4.9</span>
+              </div>
+            </div>
+            <div class="customer-rating">
+              <img src="/assets/png-images/host-4.png" alt="memory-avatar">
+              <div class="person-detail">
+                <h5>Zubair</h5>
+                <span>4.9</span>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <img src="/assets/png-images/adventure-card-5.png" alt="memories">
+            <div class="customer-rating">
+              <img src="/assets/png-images/host-3.png" alt="memory-avatar">
+              <div class="person-detail">
+                <h5>Asad</h5>
+                <span>4.7</span>
+              </div>
+            </div>
+            <div class="customer-rating">
+              <img src="/assets/png-images/host-3.png" alt="memory-avatar">
+              <div class="person-detail">
+                <h5>Asad</h5>
+                <span>4.7</span>
+              </div>
+            </div>
+            <div class="customer-rating">
+              <img src="/assets/png-images/host-3.png" alt="memory-avatar">
+              <div class="person-detail">
+                <h5>Asad</h5>
+                <span>4.7</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- work section  -->
+    <section class="work">
+      <h3>How it work</h3>
+      <span>Keep calm & travel on</span>
+      <div class="card-listing">
+        <div class="card">
+          <div class="image">
+            <img src="/assets/png-images/work-card-1.png" alt="">
+          </div>
+          <h4>Book & relax</h4>
+          <p>We realize ideas from simple to complex, everything becomes easy to use.</p>
+        </div>
+        <div class="card">
+          <div class="image">
+            <img src="/assets/png-images/work-card-2.png" alt="">
+          </div>
+          <h4>Smart checklist</h4>
+          <p>We realize ideas from simple to complex, everything becomes easy to use.</p>
+        </div>
+        <div class="card">
+          <div class="image">
+            <img src="/assets/png-images/work-card-3.png" alt="">
+          </div>
+          <h4>Save more</h4>
+          <p>We realize ideas from simple to complex, everything becomes easy to use.</p>
+        </div>
+      </div>
+    </section>
+    <!-- live section  -->
+    <section class="live">
+      <h3>Live anywhere</h3>
+      <span>Keep calm & travel on</span>
+      <div class="card-listing">
+        <div class="card">
+          <img src="/assets/png-images/live-1.png" alt="live-1">
+          <h5>Enjoy the great cold</h5>
+          <p>6,879 properties</p>
+        </div>
+        <div class="card">
+          <img src="/assets/png-images/live-2.png" alt="live-2">
+          <h5>Pick up the earliest sunrise</h5>
+          <p>6,879 properties</p>
+        </div>
+        <div class="card">
+          <img src="/assets/png-images/live-3.png" alt="live-3">
+          <h5>Unique stay</h5>
+          <p>6,879 properties</p>
+        </div>
+      </div>
+      <button class="load">Load more</button>
+    </section>
+    <!-- adventure section  -->
+    <section class="adventure">
+      <h3>Go somewhere</h3>
+      <span>Let’s go on an adventure</span>
+      <div class="input-wrapper">
+        <input type="text" name="recent" id="recent" placeholder="Recently added">
+        <button class="recent-list">
+          <img src="/assets/svg-images/fleet-arrow-down.svg" alt="fleet arrow down">
+        </button>
+      </div>
+      <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+      <div class="adventure-tabs">
+        <div class="tab-button-outer">
+          <ul role="list" id="tab-button-adventure">
+            <li>
+              <a href="#tab05">
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M7.99992 13.3333C10.9454 13.3333 13.3333 10.9454 13.3333 7.99992C13.3333 5.0544 10.9454 2.66659 7.99992 2.66659C5.0544 2.66659 2.66659 5.0544 2.66659 7.99992C2.66659 10.9454 5.0544 13.3333 7.99992 13.3333ZM7.99992 14.6666C11.6818 14.6666 14.6666 11.6818 14.6666 7.99992C14.6666 4.31802 11.6818 1.33325 7.99992 1.33325C4.31802 1.33325 1.33325 4.31802 1.33325 7.99992C1.33325 11.6818 4.31802 14.6666 7.99992 14.6666Z" fill="currentColor"/>
+                  <path d="M7.33325 4.66667C7.33325 4.29848 7.63173 4 7.99992 4C8.36811 4 8.66659 4.29848 8.66659 4.66667C9.77116 4.66667 10.6666 5.5621 10.6666 6.66667C10.6666 7.03486 10.3681 7.33333 9.99992 7.33333C9.63173 7.33333 9.33325 7.03486 9.33325 6.66667C9.33325 6.29848 9.03477 6 8.66659 6H7.1622C6.88848 6 6.66659 6.22189 6.66659 6.49561C6.66659 6.70894 6.80309 6.89833 7.00547 6.96579L9.416 7.7693C10.1628 8.01825 10.6666 8.71716 10.6666 9.50439C10.6666 10.5145 9.84774 11.3333 8.83764 11.3333H8.66659C8.66659 11.7015 8.36811 12 7.99992 12C7.63173 12 7.33325 11.7015 7.33325 11.3333C6.22868 11.3333 5.33325 10.4379 5.33325 9.33333C5.33325 8.96514 5.63173 8.66667 5.99992 8.66667C6.36811 8.66667 6.66659 8.96514 6.66659 9.33333C6.66659 9.70152 6.96506 10 7.33325 10H8.83764C9.11136 10 9.33325 9.77811 9.33325 9.50439C9.33325 9.29106 9.19675 9.10167 8.99437 9.03421L6.58383 8.2307C5.837 7.98176 5.33325 7.28284 5.33325 6.49561C5.33325 5.48551 6.1521 4.66667 7.1622 4.66667H7.33325Z" fill="currentColor"/>
+                </svg>
+                Featured
+              </a>
+            </li>
+            <li>
+              <a href="#tab06">
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M7.99992 13.3333C10.9454 13.3333 13.3333 10.9454 13.3333 7.99992C13.3333 5.0544 10.9454 2.66659 7.99992 2.66659C5.0544 2.66659 2.66659 5.0544 2.66659 7.99992C2.66659 10.9454 5.0544 13.3333 7.99992 13.3333ZM7.99992 14.6666C11.6818 14.6666 14.6666 11.6818 14.6666 7.99992C14.6666 4.31802 11.6818 1.33325 7.99992 1.33325C4.31802 1.33325 1.33325 4.31802 1.33325 7.99992C1.33325 11.6818 4.31802 14.6666 7.99992 14.6666Z" fill="currentColor"/>
+                  <path d="M7.33325 4.66667C7.33325 4.29848 7.63173 4 7.99992 4C8.36811 4 8.66659 4.29848 8.66659 4.66667C9.77116 4.66667 10.6666 5.5621 10.6666 6.66667C10.6666 7.03486 10.3681 7.33333 9.99992 7.33333C9.63173 7.33333 9.33325 7.03486 9.33325 6.66667C9.33325 6.29848 9.03477 6 8.66659 6H7.1622C6.88848 6 6.66659 6.22189 6.66659 6.49561C6.66659 6.70894 6.80309 6.89833 7.00547 6.96579L9.416 7.7693C10.1628 8.01825 10.6666 8.71716 10.6666 9.50439C10.6666 10.5145 9.84774 11.3333 8.83764 11.3333H8.66659C8.66659 11.7015 8.36811 12 7.99992 12C7.63173 12 7.33325 11.7015 7.33325 11.3333C6.22868 11.3333 5.33325 10.4379 5.33325 9.33333C5.33325 8.96514 5.63173 8.66667 5.99992 8.66667C6.36811 8.66667 6.66659 8.96514 6.66659 9.33333C6.66659 9.70152 6.96506 10 7.33325 10H8.83764C9.11136 10 9.33325 9.77811 9.33325 9.50439C9.33325 9.29106 9.19675 9.10167 8.99437 9.03421L6.58383 8.2307C5.837 7.98176 5.33325 7.28284 5.33325 6.49561C5.33325 5.48551 6.1521 4.66667 7.1622 4.66667H7.33325Z" fill="currentColor"/>
+                </svg>
+                Family-friendly
+              </a>
+            </li>
+            <li>
+              <a href="#tab07">
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M7.99992 13.3333C10.9454 13.3333 13.3333 10.9454 13.3333 7.99992C13.3333 5.0544 10.9454 2.66659 7.99992 2.66659C5.0544 2.66659 2.66659 5.0544 2.66659 7.99992C2.66659 10.9454 5.0544 13.3333 7.99992 13.3333ZM7.99992 14.6666C11.6818 14.6666 14.6666 11.6818 14.6666 7.99992C14.6666 4.31802 11.6818 1.33325 7.99992 1.33325C4.31802 1.33325 1.33325 4.31802 1.33325 7.99992C1.33325 11.6818 4.31802 14.6666 7.99992 14.6666Z" fill="currentColor"/>
+                  <path d="M7.33325 4.66667C7.33325 4.29848 7.63173 4 7.99992 4C8.36811 4 8.66659 4.29848 8.66659 4.66667C9.77116 4.66667 10.6666 5.5621 10.6666 6.66667C10.6666 7.03486 10.3681 7.33333 9.99992 7.33333C9.63173 7.33333 9.33325 7.03486 9.33325 6.66667C9.33325 6.29848 9.03477 6 8.66659 6H7.1622C6.88848 6 6.66659 6.22189 6.66659 6.49561C6.66659 6.70894 6.80309 6.89833 7.00547 6.96579L9.416 7.7693C10.1628 8.01825 10.6666 8.71716 10.6666 9.50439C10.6666 10.5145 9.84774 11.3333 8.83764 11.3333H8.66659C8.66659 11.7015 8.36811 12 7.99992 12C7.63173 12 7.33325 11.7015 7.33325 11.3333C6.22868 11.3333 5.33325 10.4379 5.33325 9.33333C5.33325 8.96514 5.63173 8.66667 5.99992 8.66667C6.36811 8.66667 6.66659 8.96514 6.66659 9.33333C6.66659 9.70152 6.96506 10 7.33325 10H8.83764C9.11136 10 9.33325 9.77811 9.33325 9.50439C9.33325 9.29106 9.19675 9.10167 8.99437 9.03421L6.58383 8.2307C5.837 7.98176 5.33325 7.28284 5.33325 6.49561C5.33325 5.48551 6.1521 4.66667 7.1622 4.66667H7.33325Z" fill="currentColor"/>
+                </svg>
+                On sale
+              </a>
+            </li>
+            <li>
+              <a href="#tab08">
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M7.99992 13.3333C10.9454 13.3333 13.3333 10.9454 13.3333 7.99992C13.3333 5.0544 10.9454 2.66659 7.99992 2.66659C5.0544 2.66659 2.66659 5.0544 2.66659 7.99992C2.66659 10.9454 5.0544 13.3333 7.99992 13.3333ZM7.99992 14.6666C11.6818 14.6666 14.6666 11.6818 14.6666 7.99992C14.6666 4.31802 11.6818 1.33325 7.99992 1.33325C4.31802 1.33325 1.33325 4.31802 1.33325 7.99992C1.33325 11.6818 4.31802 14.6666 7.99992 14.6666Z" fill="currentColor"/>
+                  <path d="M7.33325 4.66667C7.33325 4.29848 7.63173 4 7.99992 4C8.36811 4 8.66659 4.29848 8.66659 4.66667C9.77116 4.66667 10.6666 5.5621 10.6666 6.66667C10.6666 7.03486 10.3681 7.33333 9.99992 7.33333C9.63173 7.33333 9.33325 7.03486 9.33325 6.66667C9.33325 6.29848 9.03477 6 8.66659 6H7.1622C6.88848 6 6.66659 6.22189 6.66659 6.49561C6.66659 6.70894 6.80309 6.89833 7.00547 6.96579L9.416 7.7693C10.1628 8.01825 10.6666 8.71716 10.6666 9.50439C10.6666 10.5145 9.84774 11.3333 8.83764 11.3333H8.66659C8.66659 11.7015 8.36811 12 7.99992 12C7.63173 12 7.33325 11.7015 7.33325 11.3333C6.22868 11.3333 5.33325 10.4379 5.33325 9.33333C5.33325 8.96514 5.63173 8.66667 5.99992 8.66667C6.36811 8.66667 6.66659 8.96514 6.66659 9.33333C6.66659 9.70152 6.96506 10 7.33325 10H8.83764C9.11136 10 9.33325 9.77811 9.33325 9.50439C9.33325 9.29106 9.19675 9.10167 8.99437 9.03421L6.58383 8.2307C5.837 7.98176 5.33325 7.28284 5.33325 6.49561C5.33325 5.48551 6.1521 4.66667 7.1622 4.66667H7.33325Z" fill="currentColor"/>
+                </svg>
+                Sub nav
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="tab-select-outer">
+          <select id="tab-select-adventure" class="custom-select">
+            <option value="#tab05">Featured</option>
+            <option value="#tab06">Family-friendly</option>
+            <option value="#tab07">On sale</option>
+            <option value="#tab08">Sub nav</option>
+          </select>
+        </div>
+        <div id="tab05" class="tab-contents-adventure">
+          <div class="card-listing">
+            <div class="card">
+              <img src="/assets/png-images/adventure-card-1.png" alt="adventure">
+              <div class="stay-detail">
+                <div class="hotel">
+                  <h5>The grand resort</h5>
+                  <span>Karineside</span>
+                </div>
+                <div class="price">
+                  <div class="old-price">$699</div>
+                  <div class="new-price">$548</div>
+                </div>
+              </div>
+              <div class="availability">
+                <span>Tue, Jul 20 - Fri, Jul 23</span>
+                <div class="star-rating">
+                  <img src="/assets/svg-images/fleet-star.svg" alt="">
+                  4.8
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <img src="/assets/png-images/adventure-card-2.png" alt="adventure">
+              <div class="stay-detail">
+                <div class="hotel">
+                  <h5>The grand resort</h5>
+                  <span>East Barrett</span>
+                </div>
+                <div class="price">
+                  <div class="old-price">$699</div>
+                  <div class="new-price">$548</div>
+                </div>
+              </div>
+              <div class="availability">
+                <span>Tue, Jul 20 - Fri, Jul 23</span>
+                <div class="star-rating">
+                  <img src="/assets/svg-images/fleet-star.svg" alt="">
+                  4.9
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <img src="/assets/png-images/adventure-card-3.png" alt="adventure">
+              <div class="stay-detail">
+                <div class="hotel">
+                  <h5>The grand resort</h5>
+                  <span>Steuberbury</span>
+                </div>
+                <div class="price">
+                  <div class="old-price">$356</div>
+                  <div class="new-price">$288</div>
+                </div>
+              </div>
+              <div class="availability">
+                <span>Tue, Jul 20 - Fri, Jul 23</span>
+                <div class="star-rating">
+                  <img src="/assets/svg-images/fleet-star.svg" alt="">
+                  4.8
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <img src="/assets/png-images/adventure-card-4.png" alt="adventure">
+              <div class="stay-detail">
+                <div class="hotel">
+                  <h5>The grand resort</h5>
+                  <span>Idaview</span>
+                </div>
+                <div class="price">
+                  <div class="old-price">$370</div>
+                  <div class="new-price">$290</div>
+                </div>
+              </div>
+              <div class="availability">
+                <span>Tue, Jul 20 - Fri, Jul 23</span>
+                <div class="star-rating">
+                  <img src="/assets/svg-images/fleet-star.svg" alt="">
+                  4.9
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <img src="/assets/png-images/adventure-card-5.png" alt="adventure">
+              <div class="stay-detail">
+                <div class="hotel">
+                  <h5>The grand resort</h5>
+                  <span>Yasminfurt</span>
+                </div>
+                <div class="price">
+                  <div class="old-price">$699</div>
+                  <div class="new-price">$548</div>
+                </div>
+              </div>
+              <div class="availability">
+                <span>Tue, Jul 20 - Fri, Jul 23</span>
+                <div class="star-rating">
+                  <img src="/assets/svg-images/fleet-star.svg" alt="">
+                  4.8
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <img src="/assets/png-images/adventure-card-6.png" alt="adventure">
+              <div class="stay-detail">
+                <div class="hotel">
+                  <h5>The grand resort</h5>
+                  <span>North Edenshire</span>
+                </div>
+                <div class="price">
+                  <div class="old-price">$400</div>
+                  <div class="new-price">$280</div>
+                </div>
+              </div>
+              <div class="availability">
+                <span>Tue, Jul 20 - Fri, Jul 23</span>
+                <div class="star-rating">
+                  <img src="/assets/svg-images/fleet-star.svg" alt="">
+                  4.8
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <img src="/assets/png-images/adventure-card-1.png" alt="adventure">
+              <div class="stay-detail">
+                <div class="hotel">
+                  <h5>The grand resort</h5>
+                  <span>Archibaldtown</span>
+                </div>
+                <div class="price">
+                  <div class="old-price">$699</div>
+                  <div class="new-price">$548</div>
+                </div>
+              </div>
+              <div class="availability">
+                <span>Tue, Jul 20 - Fri, Jul 23</span>
+                <div class="star-rating">
+                  <img src="/assets/svg-images/fleet-star.svg" alt="">
+                  4.9
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <img src="/assets/png-images/adventure-card-8.png" alt="adventure">
+              <div class="stay-detail">
+                <div class="hotel">
+                  <h5>The grand resort</h5>
+                  <span>West Gregoria</span>
+                </div>
+                <div class="price">
+                  <div class="old-price">$580</div>
+                  <div class="new-price">$490</div>
+                </div>
+              </div>
+              <div class="availability">
+                <span>Tue, Jul 20 - Fri, Jul 23</span>
+                <div class="star-rating">
+                  <img src="/assets/svg-images/fleet-star.svg" alt="">
+                  4.8
+                </div>
+              </div>
+            </div>
+          </div>
+          <button class="view">View all</button>
+        </div>
+        <div id="tab06" class="tab-contents-adventure">
+          <div class="card-listing">
+            <div class="card">
+              <img src="/assets/png-images/adventure-card-3.png" alt="adventure">
+              <div class="stay-detail">
+                <div class="hotel">
+                  <h5>The grand resort</h5>
+                  <span>Steuberbury</span>
+                </div>
+                <div class="price">
+                  <div class="old-price">$356</div>
+                  <div class="new-price">$288</div>
+                </div>
+              </div>
+              <div class="availability">
+                <span>Tue, Jul 20 - Fri, Jul 23</span>
+                <div class="star-rating">
+                  <img src="/assets/svg-images/fleet-star.svg" alt="">
+                  4.8
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <img src="/assets/png-images/adventure-card-4.png" alt="adventure">
+              <div class="stay-detail">
+                <div class="hotel">
+                  <h5>The grand resort</h5>
+                  <span>Idaview</span>
+                </div>
+                <div class="price">
+                  <div class="old-price">$370</div>
+                  <div class="new-price">$290</div>
+                </div>
+              </div>
+              <div class="availability">
+                <span>Tue, Jul 20 - Fri, Jul 23</span>
+                <div class="star-rating">
+                  <img src="/assets/svg-images/fleet-star.svg" alt="">
+                  4.9
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <img src="/assets/png-images/adventure-card-5.png" alt="adventure">
+              <div class="stay-detail">
+                <div class="hotel">
+                  <h5>The grand resort</h5>
+                  <span>Yasminfurt</span>
+                </div>
+                <div class="price">
+                  <div class="old-price">$699</div>
+                  <div class="new-price">$548</div>
+                </div>
+              </div>
+              <div class="availability">
+                <span>Tue, Jul 20 - Fri, Jul 23</span>
+                <div class="star-rating">
+                  <img src="/assets/svg-images/fleet-star.svg" alt="">
+                  4.8
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <img src="/assets/png-images/adventure-card-6.png" alt="adventure">
+              <div class="stay-detail">
+                <div class="hotel">
+                  <h5>The grand resort</h5>
+                  <span>North Edenshire</span>
+                </div>
+                <div class="price">
+                  <div class="old-price">$400</div>
+                  <div class="new-price">$280</div>
+                </div>
+              </div>
+              <div class="availability">
+                <span>Tue, Jul 20 - Fri, Jul 23</span>
+                <div class="star-rating">
+                  <img src="/assets/svg-images/fleet-star.svg" alt="">
+                  4.8
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <img src="/assets/png-images/adventure-card-1.png" alt="adventure">
+              <div class="stay-detail">
+                <div class="hotel">
+                  <h5>The grand resort</h5>
+                  <span>Karineside</span>
+                </div>
+                <div class="price">
+                  <div class="old-price">$699</div>
+                  <div class="new-price">$548</div>
+                </div>
+              </div>
+              <div class="availability">
+                <span>Tue, Jul 20 - Fri, Jul 23</span>
+                <div class="star-rating">
+                  <img src="/assets/svg-images/fleet-star.svg" alt="">
+                  4.8
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <img src="/assets/png-images/adventure-card-2.png" alt="adventure">
+              <div class="stay-detail">
+                <div class="hotel">
+                  <h5>The grand resort</h5>
+                  <span>East Barrett</span>
+                </div>
+                <div class="price">
+                  <div class="old-price">$699</div>
+                  <div class="new-price">$548</div>
+                </div>
+              </div>
+              <div class="availability">
+                <span>Tue, Jul 20 - Fri, Jul 23</span>
+                <div class="star-rating">
+                  <img src="/assets/svg-images/fleet-star.svg" alt="">
+                  4.9
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <img src="/assets/png-images/adventure-card-1.png" alt="adventure">
+              <div class="stay-detail">
+                <div class="hotel">
+                  <h5>The grand resort</h5>
+                  <span>Archibaldtown</span>
+                </div>
+                <div class="price">
+                  <div class="old-price">$699</div>
+                  <div class="new-price">$548</div>
+                </div>
+              </div>
+              <div class="availability">
+                <span>Tue, Jul 20 - Fri, Jul 23</span>
+                <div class="star-rating">
+                  <img src="/assets/svg-images/fleet-star.svg" alt="">
+                  4.9
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <img src="/assets/png-images/adventure-card-8.png" alt="adventure">
+              <div class="stay-detail">
+                <div class="hotel">
+                  <h5>The grand resort</h5>
+                  <span>West Gregoria</span>
+                </div>
+                <div class="price">
+                  <div class="old-price">$580</div>
+                  <div class="new-price">$490</div>
+                </div>
+              </div>
+              <div class="availability">
+                <span>Tue, Jul 20 - Fri, Jul 23</span>
+                <div class="star-rating">
+                  <img src="/assets/svg-images/fleet-star.svg" alt="">
+                  4.8
+                </div>
+              </div>
+            </div>
+          </div>
+          <button class="view">View all</button>
+        </div>
+        <div id="tab07" class="tab-contents-adventure">
+          <div class="card-listing">
+            <div class="card">
+              <img src="/assets/png-images/adventure-card-5.png" alt="adventure">
+              <div class="stay-detail">
+                <div class="hotel">
+                  <h5>The grand resort</h5>
+                  <span>Yasminfurt</span>
+                </div>
+                <div class="price">
+                  <div class="old-price">$699</div>
+                  <div class="new-price">$548</div>
+                </div>
+              </div>
+              <div class="availability">
+                <span>Tue, Jul 20 - Fri, Jul 23</span>
+                <div class="star-rating">
+                  <img src="/assets/svg-images/fleet-star.svg" alt="">
+                  4.8
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <img src="/assets/png-images/adventure-card-6.png" alt="adventure">
+              <div class="stay-detail">
+                <div class="hotel">
+                  <h5>The grand resort</h5>
+                  <span>North Edenshire</span>
+                </div>
+                <div class="price">
+                  <div class="old-price">$400</div>
+                  <div class="new-price">$280</div>
+                </div>
+              </div>
+              <div class="availability">
+                <span>Tue, Jul 20 - Fri, Jul 23</span>
+                <div class="star-rating">
+                  <img src="/assets/svg-images/fleet-star.svg" alt="">
+                  4.8
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <img src="/assets/png-images/adventure-card-1.png" alt="adventure">
+              <div class="stay-detail">
+                <div class="hotel">
+                  <h5>The grand resort</h5>
+                  <span>Karineside</span>
+                </div>
+                <div class="price">
+                  <div class="old-price">$699</div>
+                  <div class="new-price">$548</div>
+                </div>
+              </div>
+              <div class="availability">
+                <span>Tue, Jul 20 - Fri, Jul 23</span>
+                <div class="star-rating">
+                  <img src="/assets/svg-images/fleet-star.svg" alt="">
+                  4.8
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <img src="/assets/png-images/adventure-card-2.png" alt="adventure">
+              <div class="stay-detail">
+                <div class="hotel">
+                  <h5>The grand resort</h5>
+                  <span>East Barrett</span>
+                </div>
+                <div class="price">
+                  <div class="old-price">$699</div>
+                  <div class="new-price">$548</div>
+                </div>
+              </div>
+              <div class="availability">
+                <span>Tue, Jul 20 - Fri, Jul 23</span>
+                <div class="star-rating">
+                  <img src="/assets/svg-images/fleet-star.svg" alt="">
+                  4.9
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <img src="/assets/png-images/adventure-card-3.png" alt="adventure">
+              <div class="stay-detail">
+                <div class="hotel">
+                  <h5>The grand resort</h5>
+                  <span>Steuberbury</span>
+                </div>
+                <div class="price">
+                  <div class="old-price">$356</div>
+                  <div class="new-price">$288</div>
+                </div>
+              </div>
+              <div class="availability">
+                <span>Tue, Jul 20 - Fri, Jul 23</span>
+                <div class="star-rating">
+                  <img src="/assets/svg-images/fleet-star.svg" alt="">
+                  4.8
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <img src="/assets/png-images/adventure-card-4.png" alt="adventure">
+              <div class="stay-detail">
+                <div class="hotel">
+                  <h5>The grand resort</h5>
+                  <span>Idaview</span>
+                </div>
+                <div class="price">
+                  <div class="old-price">$370</div>
+                  <div class="new-price">$290</div>
+                </div>
+              </div>
+              <div class="availability">
+                <span>Tue, Jul 20 - Fri, Jul 23</span>
+                <div class="star-rating">
+                  <img src="/assets/svg-images/fleet-star.svg" alt="">
+                  4.9
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <img src="/assets/png-images/adventure-card-1.png" alt="adventure">
+              <div class="stay-detail">
+                <div class="hotel">
+                  <h5>The grand resort</h5>
+                  <span>Archibaldtown</span>
+                </div>
+                <div class="price">
+                  <div class="old-price">$699</div>
+                  <div class="new-price">$548</div>
+                </div>
+              </div>
+              <div class="availability">
+                <span>Tue, Jul 20 - Fri, Jul 23</span>
+                <div class="star-rating">
+                  <img src="/assets/svg-images/fleet-star.svg" alt="">
+                  4.9
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <img src="/assets/png-images/adventure-card-8.png" alt="adventure">
+              <div class="stay-detail">
+                <div class="hotel">
+                  <h5>The grand resort</h5>
+                  <span>West Gregoria</span>
+                </div>
+                <div class="price">
+                  <div class="old-price">$580</div>
+                  <div class="new-price">$490</div>
+                </div>
+              </div>
+              <div class="availability">
+                <span>Tue, Jul 20 - Fri, Jul 23</span>
+                <div class="star-rating">
+                  <img src="/assets/svg-images/fleet-star.svg" alt="">
+                  4.8
+                </div>
+              </div>
+            </div>
+          </div>
+          <button class="view">View all</button>
+        </div>
+        <div id="tab08" class="tab-contents-adventure">
+          <div class="card-listing">
+            <div class="card">
+              <img src="/assets/png-images/adventure-card-8.png" alt="adventure">
+              <div class="stay-detail">
+                <div class="hotel">
+                  <h5>The grand resort</h5>
+                  <span>West Gregoria</span>
+                </div>
+                <div class="price">
+                  <div class="old-price">$580</div>
+                  <div class="new-price">$490</div>
+                </div>
+              </div>
+              <div class="availability">
+                <span>Tue, Jul 20 - Fri, Jul 23</span>
+                <div class="star-rating">
+                  <img src="/assets/svg-images/fleet-star.svg" alt="">
+                  4.8
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <img src="/assets/png-images/adventure-card-1.png" alt="adventure">
+              <div class="stay-detail">
+                <div class="hotel">
+                  <h5>The grand resort</h5>
+                  <span>Archibaldtown</span>
+                </div>
+                <div class="price">
+                  <div class="old-price">$699</div>
+                  <div class="new-price">$548</div>
+                </div>
+              </div>
+              <div class="availability">
+                <span>Tue, Jul 20 - Fri, Jul 23</span>
+                <div class="star-rating">
+                  <img src="/assets/svg-images/fleet-star.svg" alt="">
+                  4.9
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <img src="/assets/png-images/adventure-card-5.png" alt="adventure">
+              <div class="stay-detail">
+                <div class="hotel">
+                  <h5>The grand resort</h5>
+                  <span>Yasminfurt</span>
+                </div>
+                <div class="price">
+                  <div class="old-price">$699</div>
+                  <div class="new-price">$548</div>
+                </div>
+              </div>
+              <div class="availability">
+                <span>Tue, Jul 20 - Fri, Jul 23</span>
+                <div class="star-rating">
+                  <img src="/assets/svg-images/fleet-star.svg" alt="">
+                  4.8
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <img src="/assets/png-images/adventure-card-6.png" alt="adventure">
+              <div class="stay-detail">
+                <div class="hotel">
+                  <h5>The grand resort</h5>
+                  <span>North Edenshire</span>
+                </div>
+                <div class="price">
+                  <div class="old-price">$400</div>
+                  <div class="new-price">$280</div>
+                </div>
+              </div>
+              <div class="availability">
+                <span>Tue, Jul 20 - Fri, Jul 23</span>
+                <div class="star-rating">
+                  <img src="/assets/svg-images/fleet-star.svg" alt="">
+                  4.8
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <img src="/assets/png-images/adventure-card-1.png" alt="adventure">
+              <div class="stay-detail">
+                <div class="hotel">
+                  <h5>The grand resort</h5>
+                  <span>Karineside</span>
+                </div>
+                <div class="price">
+                  <div class="old-price">$699</div>
+                  <div class="new-price">$548</div>
+                </div>
+              </div>
+              <div class="availability">
+                <span>Tue, Jul 20 - Fri, Jul 23</span>
+                <div class="star-rating">
+                  <img src="/assets/svg-images/fleet-star.svg" alt="">
+                  4.8
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <img src="/assets/png-images/adventure-card-2.png" alt="adventure">
+              <div class="stay-detail">
+                <div class="hotel">
+                  <h5>The grand resort</h5>
+                  <span>East Barrett</span>
+                </div>
+                <div class="price">
+                  <div class="old-price">$699</div>
+                  <div class="new-price">$548</div>
+                </div>
+              </div>
+              <div class="availability">
+                <span>Tue, Jul 20 - Fri, Jul 23</span>
+                <div class="star-rating">
+                  <img src="/assets/svg-images/fleet-star.svg" alt="">
+                  4.9
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <img src="/assets/png-images/adventure-card-3.png" alt="adventure">
+              <div class="stay-detail">
+                <div class="hotel">
+                  <h5>The grand resort</h5>
+                  <span>Steuberbury</span>
+                </div>
+                <div class="price">
+                  <div class="old-price">$356</div>
+                  <div class="new-price">$288</div>
+                </div>
+              </div>
+              <div class="availability">
+                <span>Tue, Jul 20 - Fri, Jul 23</span>
+                <div class="star-rating">
+                  <img src="/assets/svg-images/fleet-star.svg" alt="">
+                  4.8
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <img src="/assets/png-images/adventure-card-4.png" alt="adventure">
+              <div class="stay-detail">
+                <div class="hotel">
+                  <h5>The grand resort</h5>
+                  <span>Idaview</span>
+                </div>
+                <div class="price">
+                  <div class="old-price">$370</div>
+                  <div class="new-price">$290</div>
+                </div>
+              </div>
+              <div class="availability">
+                <span>Tue, Jul 20 - Fri, Jul 23</span>
+                <div class="star-rating">
+                  <img src="/assets/svg-images/fleet-star.svg" alt="">
+                  4.9
+                </div>
+              </div>
+            </div>
+          </div>
+          <button class="view">View all</button>
+        </div>
+      </div>
+    </section>
+    <!-- travel section  -->
+    <section class="travel">
+      <div class="travel-content">
+        <span>supercharge your planning powers</span>
+        <h3>Travel to make memories all around the world</h3>
+        <p>Stacks is a production-ready library of stackable content blocks built in React Native.</p>
+        <div class="input-wrapper">
+          <input type="number" name="phone" id="phone" placeholder="Enter your phone number">
+          <button class="arrow">
+            <img src="/assets/svg-images/phone-arrow.svg" alt="arrow">
+          </button>
+        </div>
+      </div>
+      <div class="travel-image">
+        <img src="/assets/png-images/travel-image.png" alt="travel">
+      </div>
+    </section>
+    <!-- browse section  -->
+    <section class="browse">
+      <h3>Browse by property type</h3>
+      <span>Let’s go on an adventure</span>
+      <div class="browse-listing">
+        <div class="card">
+          <div class="discount">20% off</div>
+          <img src="/assets/png-images/adventure-card-1.png" alt="browse">
+          <h5>Nature house</h5>
+          <span>650,596</span>
+        </div>
+        <div class="card">
+          <div class="discount">20% off</div>
+          <img src="/assets/png-images/adventure-card-8.png" alt="browse">
+          <h5>Nature house</h5>
+          <span>650,596</span>
+        </div>
+        <div class="card">
+          <div class="discount">from $230</div>
+          <img src="/assets/png-images/adventure-card-1.png" alt="browse">
+          <h5>Nature house</h5>
+          <span>650,596</span>
+        </div>
+        <div class="card">
+          <div class="discount">20% off</div>
+          <img src="/assets/png-images/adventure-card-8.png" alt="browse">
+          <h5>Nature house</h5>
+          <span>650,596</span>
+        </div>
+        <div class="card">
+          <div class="discount">20% off</div>
+          <img src="/assets/png-images/adventure-card-1.png" alt="browse">
+          <h5>Nature house</h5>
+          <span>650,596</span>
+        </div>
+        <div class="card">
+          <div class="discount">20% off</div>
+          <img src="/assets/png-images/adventure-card-8.png" alt="browse">
+          <h5>Nature house</h5>
+          <span>650,596</span>
+        </div>
+        <div class="card">
+          <div class="discount">from $230</div>
+          <img src="/assets/png-images/adventure-card-1.png" alt="browse">
+          <h5>Nature house</h5>
+          <span>650,596</span>
+        </div>
+        <div class="card">
+          <div class="discount">20% off</div>
+          <img src="/assets/png-images/adventure-card-8.png" alt="browse">
+          <h5>Nature house</h5>
+          <span>650,596</span>
+        </div>
+      </div>
+    </section>
+    <!-- nearby section  -->
+    <section class="nearby">
+      <h3>Explore nearby</h3>
+      <span>10,789 beautiful places to go</span>
+      <div class="card-listing">
+        <div class="card">
+          <div class="rank">1480</div>
+          <img src="/assets/png-images/nearby-1.png" alt="nearby">
+          <h5>Thompsonbury</h5>
+          <span>15 minutes drive</span>
+        </div>
+        <div class="card">
+          <div class="rank">1480</div>
+          <img src="/assets/png-images/nearby-2.png" alt="nearby">
+          <h5>Hudsontown</h5>
+          <span>15 minutes drive</span>
+        </div>
+        <div class="card">
+          <div class="rank">1480</div>
+          <img src="/assets/png-images/nearby-3.png" alt="nearby">
+          <h5>Lake Marcelle</h5>
+          <span>2 hours drive</span>
+        </div>
+        <div class="card">
+          <div class="rank">1480</div>
+          <img src="/assets/png-images/nearby-1.png" alt="nearby">
+          <h5>New Keagan</h5>
+          <span>15 minutes drive</span>
+        </div>
+        <div class="card">
+          <div class="rank">1480</div>
+          <img src="/assets/png-images/nearby--5.png" alt="nearby">
+          <h5>MacGyverton</h5>
+          <span>2 hours drive</span>
+        </div>
+        <div class="card">
+          <div class="rank">1480</div>
+          <img src="/assets/png-images/nearby-6.png" alt="nearby">
+          <h5>North Justen</h5>
+          <span>2 hours drive</span>
+        </div>
+        <div class="card">
+          <div class="rank">1480</div>
+          <img src="/assets/png-images/nearby-7.png" alt="nearby">
+          <h5>Port Elyseberg</h5>
+          <span>15 minutes drive</span>
+        </div>
+        <div class="card">
+          <div class="rank">1480</div>
+          <img src="/assets/png-images/nearby-8.png" alt="nearby">
+          <h5>Danielmouth</h5>
+          <span>15 minutes drive</span>
+        </div>
+        <div class="card">
+          <div class="rank">1480</div>
+          <img src="/assets/png-images/nearby-9.png" alt="nearby">
+          <h5>Russelville</h5>
+          <span>2 hours drive</span>
+        </div>
+      </div>  
+    </section>
+    <!-- host section  -->
+    <section class="host">
+      <h3>Best hosts of the </h3>
+      <div class="host-detail">
+        <div class="tab-button-outer">
+          <ul role="list" id="tab-button-host">
+            <li><a href="#tab09">Month</a></li>
+            <li><a href="#tab10">week</a></li>
+            <li><a href="#tab11">Year</a></li>
+          </ul>
+        </div>
+        <div class="tab-select-outer">
+          <select id="tab-select-host">
+            <option value="#tab09">month</option>
+            <option value="#tab10">week</option>
+            <option value="#tab11">year</option>
+          </select>
+        </div>
+        <div id="tab09" class="tab-contents-host">
+          <div class="swiper-container">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="rating">
+                  <img src="/assets/svg-images/fleet-star.svg" alt="">
+                  4.9
+                </div>
+                <img src="/assets/png-images/adventure-card-1.png" alt="host">
+                <div class="host-detail">
+                  <img src="/assets/png-images/host-1.png" alt="host">
+                  <h5>Antone Heller</h5>
+                  <span>Gaylordside</span>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="rating">
+                  <img src="/assets/svg-images/fleet-star.svg" alt="">
+                  4.9
+                </div>
+                <img src="/assets/png-images/adventure-card-2.png" alt="host">
+                <div class="host-detail">
+                  <img src="/assets/png-images/host-2.png" alt="host">
+                  <h5>Antone Heller</h5>
+                  <span>Gaylordside</span>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="rating">
+                  <img src="/assets/svg-images/fleet-star.svg" alt="">
+                  4.9
+                </div>
+                <img src="/assets/png-images/adventure-card-3.png" alt="host">
+                <div class="host-detail">
+                  <img src="/assets/png-images/host-3.png" alt="host">
+                  <h5>Antone Heller</h5>
+                  <span>Gaylordside</span>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="rating">
+                  <img src="/assets/svg-images/fleet-star.svg" alt="">
+                  4.9
+                </div>
+                <img src="/assets/png-images/adventure-card-4.png" alt="host">
+                <div class="host-detail">
+                  <img src="/assets/png-images/host-4.png" alt="host">
+                  <h5>Antone Heller</h5>
+                  <span>Gaylordside</span>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="rating">
+                  <img src="/assets/svg-images/fleet-star.svg" alt="">
+                  4.9
+                </div>
+                <img src="/assets/png-images/adventure-card-3.png" alt="host">
+                <div class="host-detail">
+                  <img src="/assets/png-images/host-3.png" alt="host">
+                  <h5>Antone Heller</h5>
+                  <span>Gaylordside</span>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="rating">
+                  <img src="/assets/svg-images/fleet-star.svg" alt="">
+                  4.9
+                </div>
+                <img src="/assets/png-images/adventure-card-4.png" alt="host">
+                <div class="host-detail">
+                  <img src="/assets/png-images/host-4.png" alt="host">
+                  <h5>Antone Heller</h5>
+                  <span>Gaylordside</span>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="rating">
+                  <img src="/assets/svg-images/fleet-star.svg" alt="">
+                  4.9
+                </div>
+                <img src="/assets/png-images/adventure-card-1.png" alt="host">
+                <div class="host-detail">
+                  <img src="/assets/png-images/host-1.png" alt="host">
+                  <h5>Antone Heller</h5>
+                  <span>Gaylordside</span>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="rating">
+                  <img src="/assets/svg-images/fleet-star.svg" alt="">
+                  4.9
+                </div>
+                <img src="/assets/png-images/adventure-card-2.png" alt="host">
+                <div class="host-detail">
+                  <img src="/assets/png-images/host-2.png" alt="host">
+                  <h5>Antone Heller</h5>
+                  <span>Gaylordside</span>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+          </div>
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.3/js/swiper.js"></script>
+
+        </div>
+        <div id="tab10" class="tab-contents-host">
+          <div class="swiper-container">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="rating">
+                  <img src="/assets/svg-images/fleet-star.svg" alt="">
+                  4.9
+                </div>
+                <img src="/assets/png-images/adventure-card-3.png" alt="host">
+                <div class="host-detail">
+                  <img src="/assets/png-images/host-3.png" alt="host">
+                  <h5>Antone Heller</h5>
+                  <span>Gaylordside</span>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="rating">
+                  <img src="/assets/svg-images/fleet-star.svg" alt="">
+                  4.9
+                </div>
+                <img src="/assets/png-images/adventure-card-1.png" alt="host">
+                <div class="host-detail">
+                  <img src="/assets/png-images/host-1.png" alt="host">
+                  <h5>Antone Heller</h5>
+                  <span>Gaylordside</span>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="rating">
+                  <img src="/assets/svg-images/fleet-star.svg" alt="">
+                  4.9
+                </div>
+                <img src="/assets/png-images/adventure-card-2.png" alt="host">
+                <div class="host-detail">
+                  <img src="/assets/png-images/host-2.png" alt="host">
+                  <h5>Antone Heller</h5>
+                  <span>Gaylordside</span>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="rating">
+                  <img src="/assets/svg-images/fleet-star.svg" alt="">
+                  4.9
+                </div>
+                <img src="/assets/png-images/adventure-card-4.png" alt="host">
+                <div class="host-detail">
+                  <img src="/assets/png-images/host-4.png" alt="host">
+                  <h5>Antone Heller</h5>
+                  <span>Gaylordside</span>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="rating">
+                  <img src="/assets/svg-images/fleet-star.svg" alt="">
+                  4.9
+                </div>
+                <img src="/assets/png-images/adventure-card-1.png" alt="host">
+                <div class="host-detail">
+                  <img src="/assets/png-images/host-1.png" alt="host">
+                  <h5>Antone Heller</h5>
+                  <span>Gaylordside</span>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="rating">
+                  <img src="/assets/svg-images/fleet-star.svg" alt="">
+                  4.9
+                </div>
+                <img src="/assets/png-images/adventure-card-2.png" alt="host">
+                <div class="host-detail">
+                  <img src="/assets/png-images/host-2.png" alt="host">
+                  <h5>Antone Heller</h5>
+                  <span>Gaylordside</span>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="rating">
+                  <img src="/assets/svg-images/fleet-star.svg" alt="">
+                  4.9
+                </div>
+                <img src="/assets/png-images/adventure-card-3.png" alt="host">
+                <div class="host-detail">
+                  <img src="/assets/png-images/host-3.png" alt="host">
+                  <h5>Antone Heller</h5>
+                  <span>Gaylordside</span>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="rating">
+                  <img src="/assets/svg-images/fleet-star.svg" alt="">
+                  4.9
+                </div>
+                <img src="/assets/png-images/adventure-card-4.png" alt="host">
+                <div class="host-detail">
+                  <img src="/assets/png-images/host-4.png" alt="host">
+                  <h5>Antone Heller</h5>
+                  <span>Gaylordside</span>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+          </div>
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.3/js/swiper.js"></script>
+
+        </div>
+        <div id="tab11" class="tab-contents-host">
+          <div class="swiper-container">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="rating">
+                  <img src="/assets/svg-images/fleet-star.svg" alt="">
+                  4.9
+                </div>
+                <img src="/assets/png-images/adventure-card-4.png" alt="host">
+                <div class="host-detail">
+                  <img src="/assets/png-images/host-4.png" alt="host">
+                  <h5>Antone Heller</h5>
+                  <span>Gaylordside</span>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="rating">
+                  <img src="/assets/svg-images/fleet-star.svg" alt="">
+                  4.9
+                </div>
+                <img src="/assets/png-images/adventure-card-1.png" alt="host">
+                <div class="host-detail">
+                  <img src="/assets/png-images/host-1.png" alt="host">
+                  <h5>Antone Heller</h5>
+                  <span>Gaylordside</span>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="rating">
+                  <img src="/assets/svg-images/fleet-star.svg" alt="">
+                  4.9
+                </div>
+                <img src="/assets/png-images/adventure-card-2.png" alt="host">
+                <div class="host-detail">
+                  <img src="/assets/png-images/host-2.png" alt="host">
+                  <h5>Antone Heller</h5>
+                  <span>Gaylordside</span>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="rating">
+                  <img src="/assets/svg-images/fleet-star.svg" alt="">
+                  4.9
+                </div>
+                <img src="/assets/png-images/adventure-card-3.png" alt="host">
+                <div class="host-detail">
+                  <img src="/assets/png-images/host-3.png" alt="host">
+                  <h5>Antone Heller</h5>
+                  <span>Gaylordside</span>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="rating">
+                  <img src="/assets/svg-images/fleet-star.svg" alt="">
+                  4.9
+                </div>
+                <img src="/assets/png-images/adventure-card-1.png" alt="host">
+                <div class="host-detail">
+                  <img src="/assets/png-images/host-1.png" alt="host">
+                  <h5>Antone Heller</h5>
+                  <span>Gaylordside</span>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="rating">
+                  <img src="/assets/svg-images/fleet-star.svg" alt="">
+                  4.9
+                </div>
+                <img src="/assets/png-images/adventure-card-2.png" alt="host">
+                <div class="host-detail">
+                  <img src="/assets/png-images/host-2.png" alt="host">
+                  <h5>Antone Heller</h5>
+                  <span>Gaylordside</span>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="rating">
+                  <img src="/assets/svg-images/fleet-star.svg" alt="">
+                  4.9
+                </div>
+                <img src="/assets/png-images/adventure-card-3.png" alt="host">
+                <div class="host-detail">
+                  <img src="/assets/png-images/host-3.png" alt="host">
+                  <h5>Antone Heller</h5>
+                  <span>Gaylordside</span>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="rating">
+                  <img src="/assets/svg-images/fleet-star.svg" alt="">
+                  4.9
+                </div>
+                <img src="/assets/png-images/adventure-card-4.png" alt="host">
+                <div class="host-detail">
+                  <img src="/assets/png-images/host-4.png" alt="host">
+                  <h5>Antone Heller</h5>
+                  <span>Gaylordside</span>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+          </div>
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.3/js/swiper.js"></script>
+
+        </div>
+      </div>
+    </section>
+    <!-- ticket section  -->
+    <section class="ticket">
+      <div class="ticket-content">
+        <span>fleet travel ui kit</span>
+        <h3>Book a ticket and just leave</h3>
+        <button class="book">Book now</button>
+      </div>
+      <div class="ticket-modal">
+        <img src="/assets/png-images/modal-image.png" alt="modale-image">
+
+      <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+        <img src="/assets/svg-images/modal-button.svg" alt="modal-button">
+      </button>
+      
+      <!-- Modal -->
+      <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <iframe src="https://www.youtube.com/embed/BHACKCNDMW8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+    </section>
+    <!-- category section  -->
+    <section class="category">
+      <h3>Browse by category</h3>
+      <span>Let’s go on an adventure</span>
+      <div class="category-listing">
+        <div class="card">
+          <div class="amount">256.356</div>
+          <img src="/assets/svg-images/category-building.svg" alt="category-building">
+          <h5>City house</h5>
+          <span>Small description</span>
+        </div>
+        <div class="card">
+          <div class="amount">256.356</div>
+          <img src="/assets/svg-images/category-building.svg" alt="category-building">
+          <h5>City house</h5>
+          <span>Small description</span>
+        </div>
+        <div class="card">
+          <div class="amount">256.356</div>
+          <img src="/assets/svg-images/category-building.svg" alt="category-building">
+          <h5>City house</h5>
+          <span>Small description</span>
+        </div>
+        <div class="card">
+          <div class="amount">256.356</div>
+          <img src="/assets/svg-images/category-building.svg" alt="category-building">
+          <h5>City house</h5>
+          <span>Small description</span>
+        </div>
+        <div class="card">
+          <div class="amount">256.356</div>
+          <img src="/assets/svg-images/category-building.svg" alt="category-building">
+          <h5>City house</h5>
+          <span>Small description</span>
+        </div>
+        <div class="card">
+          <div class="amount">256.356</div>
+          <img src="/assets/svg-images/category-building.svg" alt="category-building">
+          <h5>City house</h5>
+          <span>Small description</span>
+        </div>
+        <div class="card">
+          <div class="amount">256.356</div>
+          <img src="/assets/svg-images/category-building.svg" alt="category-building">
+          <h5>City house</h5>
+          <span>Small description</span>
+        </div>
+        <div class="card">
+          <div class="amount">256.356</div>
+          <img src="/assets/svg-images/category-building.svg" alt="category-building">
+          <h5>City house</h5>
+          <span>Small description</span>
+        </div>
+        <div class="card">
+          <div class="amount">256.356</div>
+          <img src="/assets/svg-images/category-building.svg" alt="category-building">
+          <h5>City house</h5>
+          <span>Small description</span>
+        </div>
+        <div class="card">
+          <div class="amount">256.356</div>
+          <img src="/assets/svg-images/category-building.svg" alt="category-building">
+          <h5>City house</h5>
+          <span>Small description</span>
+        </div>
+        <div class="card">
+          <div class="amount">256.356</div>
+          <img src="/assets/svg-images/category-building.svg" alt="category-building">
+          <h5>City house</h5>
+          <span>Small description</span>
+        </div>
+        <div class="card">
+          <div class="amount">256.356</div>
+          <img src="/assets/svg-images/category-building.svg" alt="category-building">
+          <h5>City house</h5>
+          <span>Small description</span>
+        </div>
+        <div class="card">
+          <div class="amount">256.356</div>
+          <img src="/assets/svg-images/category-building.svg" alt="category-building">
+          <h5>City house</h5>
+          <span>Small description</span>
+        </div>
+        <div class="card">
+          <div class="amount">256.356</div>
+          <img src="/assets/svg-images/category-building.svg" alt="category-building">
+          <h5>City house</h5>
+          <span>Small description</span>
+        </div>
+        <div class="card">
+          <div class="amount">256.356</div>
+          <img src="/assets/svg-images/category-building.svg" alt="category-building">
+          <h5>City house</h5>
+          <span>Small description</span>
+        </div>
+        <div class="card">
+          <div class="amount">256.356</div>
+          <img src="/assets/svg-images/category-building.svg" alt="category-building">
+          <h5>City house</h5>
+          <span>Small description</span>
+        </div>
+        <div class="card">
+          <div class="amount">256.356</div>
+          <img src="/assets/svg-images/category-building.svg" alt="category-building">
+          <h5>City house</h5>
+          <span>Small description</span>
+        </div>
+        <div class="card">
+          <div class="amount">256.356</div>
+          <img src="/assets/svg-images/category-building.svg" alt="category-building">
+          <h5>City house</h5>
+          <span>Small description</span>
+        </div>
+        <div class="card">
+          <div class="amount">256.356</div>
+          <img src="/assets/svg-images/category-building.svg" alt="category-building">
+          <h5>City house</h5>
+          <span>Small description</span>
+        </div>
+      </div> 
+    </section>
+  </main>
+  <!-- footer section  -->
+  <footer>
+    <div class="menu-bar">
+      <a href="#" class="logo">
+        <img src="/assets/svg-images/logo.svg" alt="logo">
+        fleet
+      </a>
+      <ul role="list">
+        <li><a href="">About</a></li>
+        <li><a href="">What We Do</a></li>
+        <li><a href="">Jobs</a></li>
+        <li><a href="">Projects</a></li>
+        <li><a href="">Press</a></li>
+        <li><a href="">Download</a></li>
+      </ul>
+      <div class="join-us">
+        <span>Join our community 🔥</span>
+        <div class="input-wrapper">
+          <input type="email" name="mail" id="mail" placeholder="Enter your email">
+          <button class="arrow">
+            <img src="/assets/svg-images/phone-arrow.svg" alt="arrow">
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="copyright">Copyright © 2021 UI8 LLC. All rights reserved</div>
+  </footer>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.js"></script>
 </body>
+<script>
+  $(function() {
+var $tabButtonItem = $('#tab-button li'),
+    $tabSelect = $('#tab-select'),
+    $tabContents = $('.tab-contents'),
+    activeClass = 'is-active';
+
+$tabButtonItem.first().addClass(activeClass);
+$tabContents.not(':first').hide();
+
+$tabButtonItem.find('a').on('click', function(e) {
+  var target = $(this).attr('href');
+
+  $tabButtonItem.removeClass(activeClass);
+  $(this).parent().addClass(activeClass);
+  $tabSelect.val(target);
+  $tabContents.hide();
+  $(target).show();
+  e.preventDefault();
+});
+
+$tabSelect.on('change', function() {
+  var target = $(this).val(),
+      targetSelectNum = $(this).prop('selectedIndex');
+
+  $tabButtonItem.removeClass(activeClass);
+  $tabButtonItem.eq(targetSelectNum).addClass(activeClass);
+  $tabContents.hide();
+  $(target).show();
+});
+});
+
+$(document).ready(function () {
+  $(".booking-listing").slick({
+    dots: false,
+    arrows: true,
+    slidesToScroll: 1,
+    slidesToShow: 1.1,
+    loop: true,
+    responsive: [ 
+    {
+      breakpoint: 1920, // Adjust the breakpoint value as needed
+      settings: {
+        slidesToShow: 3, // Number of slides to show at this breakpoint
+      }
+    },
+    {
+      breakpoint: 768, // Adjust the breakpoint value as needed
+      settings: {
+        slidesToShow: 2, // Number of slides to show at this breakpoint
+      }
+    },
+    {
+      breakpoint: 481, // Adjust the breakpoint value as needed
+      settings: {
+        slidesToShow: 1.1, // Number of slides to show at this breakpoint
+      }
+    },
+    ]
+
+  });
+});
+
+$(document).ready(function () {
+  $(".facility-listing").slick({
+    dots: false,
+    arrows: true,
+    slidesToScroll: 1,
+    slidesToShow: 1,
+    loop: true,
+    fade: true,
+    speed: 1000,
+  });
+});
+
+
+$(function() {
+var $tabButtonItemAdventure = $('#tab-button-adventure li'),
+    $tabSelectAdventure  = $('#tab-select-adventure'),
+    $tabContentsAdventure  = $('.tab-contents-adventure'),
+    activeClass = 'is-active';
+
+$tabButtonItemAdventure .first().addClass(activeClass);
+$tabContentsAdventure .not(':first').hide();
+
+$tabButtonItemAdventure .find('a').on('click', function(e) {
+  var target = $(this).attr('href');
+
+  $tabButtonItemAdventure .removeClass(activeClass);
+  $(this).parent().addClass(activeClass);
+  $tabSelectAdventure .val(target);
+  $tabContentsAdventure .hide();
+  $(target).show();
+  e.preventDefault();
+});
+
+$tabSelectAdventure .on('change', function() {
+  var target = $(this).val(),
+      targetSelectNum = $(this).prop('selectedIndex');
+
+  $tabButtonItemAdventure .removeClass(activeClass);
+  $tabButtonItemAdventure .eq(targetSelectNum).addClass(activeClass);
+  $tabContentsAdventure .hide();
+  $(target).show();
+});
+});
+
+
+
+
+$(document).ready(function () {
+  $(".browse-listing").slick({
+    dots: false,
+    arrows: true,
+    slidesToScroll: 1,
+    slidesToShow: 1.2,
+    loop: true,
+    responsive: [ 
+    {
+      breakpoint: 1920, // Adjust the breakpoint value as needed
+      settings: {
+        slidesToShow: 4, // Number of slides to show at this breakpoint
+      }
+    },
+    {
+      breakpoint: 1280, // Adjust the breakpoint value as needed
+      settings: {
+        slidesToShow: 3.5, // Number of slides to show at this breakpoint
+      }
+    },
+    {
+      breakpoint: 1024, // Adjust the breakpoint value as needed
+      settings: {
+        slidesToShow: 2.5, // Number of slides to show at this breakpoint
+      }
+    },
+    {
+      breakpoint: 768, // Adjust the breakpoint value as needed
+      settings: {
+        slidesToShow: 1.8, // Number of slides to show at this breakpoint
+      }
+    },
+    {
+      breakpoint: 481, // Adjust the breakpoint value as needed
+      settings: {
+        slidesToShow: 1.1, // Number of slides to show at this breakpoint
+      }
+    },
+    ]
+  });
+});
+
+$(document).ready(function () {
+  $(".category-listing").slick({
+    speed: 500,
+    dots: false,
+    arrows: true,
+    slidesToScroll: 1,
+    slidesToShow: 1.1,
+    loop: true,
+    responsive: [ 
+    {
+      breakpoint: 1920, // Adjust the breakpoint value as needed
+      settings: {
+        slidesToShow: 4, // Number of slides to show at this breakpoint
+      }
+    },
+    {
+      breakpoint: 1024, // Adjust the breakpoint value as needed
+      settings: {
+        slidesToShow: 3, // Number of slides to show at this breakpoint
+      }
+    },
+    {
+      breakpoint: 768, // Adjust the breakpoint value as needed
+      settings: {
+        slidesToShow: 2, // Number of slides to show at this breakpoint
+      }
+    },
+    {
+      breakpoint: 481, // Adjust the breakpoint value as needed
+      settings: {
+        slidesToShow: 1.1, // Number of slides to show at this breakpoint
+      }
+    },
+    ]
+  });
+});
+
+$(function() {
+var $tabButtonItemHost = $('#tab-button-host li'),
+    $tabSelectHost  = $('#tab-select-host'),
+    $tabContentsHost  = $('.tab-contents-host'),
+    activeClass = 'is-active';
+
+$tabButtonItemHost .first().addClass(activeClass);
+$tabContentsHost .not(':first').hide();
+
+$tabButtonItemHost .find('a').on('click', function(e) {
+  var target = $(this).attr('href');
+
+  $tabButtonItemHost .removeClass(activeClass);
+  $(this).parent().addClass(activeClass);
+  $tabSelectHost .val(target);
+  $tabContentsHost .hide();
+  $(target).show();
+  e.preventDefault();
+});
+
+$tabSelectHost .on('change', function() {
+  var target = $(this).val(),
+      targetSelectNum = $(this).prop('selectedIndex');
+
+  $tabButtonItemHost .removeClass(activeClass);
+  $tabButtonItemHost .eq(targetSelectNum).addClass(activeClass);
+  $tabContentsHost.hide();
+  $(target).show();
+});
+});
+
+var swiper = new Swiper('.swiper-container', {
+    speed: 500,
+    slidesToScroll: 1,
+    slidesPerView: 4,
+    spaceBetween: 16,
+    loop: true,
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+});
+swiper.on('slideChangeTransitionEnd', function() {
+  console.log('slideChangeTransitionEnd');
+});
+swiper.on('slideChangeTransitionStart', function() {
+  console.log('slideChangeTransitionStart');
+});
+
+
+
+</script>
 </html>
